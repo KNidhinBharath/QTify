@@ -13,7 +13,7 @@ export function Card({ title, follows, image})
         </div>
       </div>
       <div className={Style.titleWrapper}> 
-         <h3 className={Style.cardTitle}>{title}</h3>
+         <h5 className={Style.cardTitle}>{title}</h5>
       </div>
      </div>
   );
