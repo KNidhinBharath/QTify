@@ -1,7 +1,7 @@
 import Chip from '@mui/material/Chip';
 import Style from "./Card.module.css";
 
-export function Card({ title, follows, image}) 
+export function Card({ title, follows, image , type}) 
 {
  
   return (
@@ -9,7 +9,7 @@ export function Card({ title, follows, image})
       <div className={Style.card}>
         <img src={image} alt={title} className={Style.cardImage} />
         <div className={Style.banner}>
-          <Chip label={`${follows} Follows`} variant="outlined" className={Style.chip} />
+          <Chip label={`${follows} ${type === "song" ? "Likes" : "Follows"}`} variant="outlined" className={Style.chip} />
         </div>
       </div>
       <div className={Style.titleWrapper}> 
